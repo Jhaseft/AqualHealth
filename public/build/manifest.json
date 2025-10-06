@@ -1,0 +1,26 @@
+{
+  "resources/js/Pages/Welcome.jsx": {
+    "file": "assets/Welcome-CAKegRZY.js",
+    "name": "Welcome",
+    "src": "resources/js/Pages/Welcome.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "css": [
+      "assets/Welcome-DLUS6Zxv.css"
+    ]
+  },
+  "resources/js/app.jsx": {
+    "file": "assets/app-CSGpFgAA.js",
+    "name": "app",
+    "src": "resources/js/app.jsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/Pages/Welcome.jsx"
+    ],
+    "css": [
+      "assets/app-CDlADbLt.css"
+    ]
+  }
+}
