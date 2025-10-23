@@ -23,4 +23,6 @@ Route::get('/CasosDeExito', function () {
     ]);
 });
 
-
+//incluir las rutas de quienes somos
+require __DIR__ . '/whoWeAreRoute.php';
+require __DIR__ . '/ExecutiveTeamRoute.php';

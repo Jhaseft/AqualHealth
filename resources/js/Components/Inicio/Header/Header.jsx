@@ -3,6 +3,7 @@ import { FaTiktok, FaInstagram, FaFacebookF } from "react-icons/fa"; // importam
 import HamburgerButton from "./HamburgerButton";
 import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
+import { Link } from "@inertiajs/react";
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -15,8 +16,9 @@ export default function Header() {
             name: "Nosotros",
             link: "#",
             submenu: [
-                { name: "Quienes Somos", link: "#" },
-                { name: "Equipo Directivo", link: "#" },
+
+                { name: "Quienes Somos", link: "/quienes-somos" },
+                { name: "Equipo Directivo", link: "/equipo-directivo" },
                 { name: "Nuestra Historia", link: "/Historia" },
                 { name: "Politicas", link: "/Politicas" },
             ],

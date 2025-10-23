@@ -18,7 +18,10 @@ export default function MobileMenu({ isOpen, menuItems }) {
           transition={{ duration: 0.3 }}
           className="absolute top-full left-0 w-full bg-white shadow-lg border-t border-blue-200 z-50"
         >
+
           <ul className="flex flex-col text-blue-800 py-4 space-y-1 font-medium">
+
+  
             {menuItems.map((item) => (
               <li key={item.name} className="w-full">
                 {/* ✅ Si NO tiene submenu → es un link normal */}
