@@ -10,22 +10,22 @@ export default function Header() {
     const toggleMenu = () => setMenuOpen((prev) => !prev);
 
     const menuItems = [
-        { name: "Inicio", link: "#" },
+        { name: "Inicio", link: "/" },
         {
             name: "Nosotros",
             link: "#",
             submenu: [
                 { name: "Quienes Somos", link: "#" },
                 { name: "Equipo Directivo", link: "#" },
-                { name: "Nuestra Historia", link: "#" },
-                { name: "Politicas", link: "#" },
+                { name: "Nuestra Historia", link: "/Historia" },
+                { name: "Politicas", link: "/Politicas" },
             ],
         },
         {
             name: "Experiencia",
             link: "#",
             submenu: [
-                { name: "Casos De Exito", link: "#" },           
+                { name: "Casos De Exito", link: "/CasosDeExito" },           
             ],
         },
          {
@@ -39,7 +39,7 @@ export default function Header() {
                 { name: "CAPACITACIÓN & ENTRENAMIENTO", link: "#" },
             ],
         },
-        { name: "Contáctanos", link: "#" },
+        { name: "Contáctanos", link: "/" },
     ];
 
     return (
@@ -48,7 +48,7 @@ export default function Header() {
                 
                 {/* Logo clickeable con animación */}
                 <a
-                    href="https://tusitio.com"
+                    href="/"
                     className="flex items-center transform transition duration-300 hover:scale-105 hover:brightness-110"
                 >
                     <img
@@ -66,7 +66,7 @@ export default function Header() {
                     <div className="hidden md:flex items-center space-x-3">
                         {/* TikTok */}
                         <a
-                            href="https://www.tiktok.com/@tuusuario"
+                            href="https://www.tiktok.com/@aquahealthbo?_t=8fpmMbmSosg&_r=1 "
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-black text-white p-3 rounded-full transform transition duration-300 hover:scale-125"
@@ -76,7 +76,7 @@ export default function Header() {
 
                         {/* Instagram */}
                         <a
-                            href="https://www.instagram.com/tuusuario"
+                            href="https://instagram.com/aqua_healthbolivia?igshid=MzMyNGUyNmU2YQ=="
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white p-3 rounded-full transform transition duration-300 hover:scale-125"
@@ -86,7 +86,7 @@ export default function Header() {
 
                         {/* Facebook */}
                         <a
-                            href="https://www.facebook.com/tuusuario"
+                            href="https://www.facebook.com/WWF?mibextid=9R9pXO"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-blue-600 text-white p-3 rounded-full transform transition duration-300 hover:scale-125"
