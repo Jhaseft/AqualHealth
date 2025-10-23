@@ -9,6 +9,7 @@ export default function HamburgerButton({ isOpen, toggle }) {
       whileTap={{ scale: 0.95 }}
       className="flex md:flex lg:hidden flex-col justify-center items-center w-10 h-10 focus:outline-none relative z-50"
     >
+      {/**Barras del botón (las tres líneas) */}
       <motion.span
         animate={{ rotate: isOpen ? 45 : 0, y: isOpen ? 6 : 0 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}

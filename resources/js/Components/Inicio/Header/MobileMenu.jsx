@@ -19,6 +19,7 @@ export default function MobileMenu({ isOpen, menuItems }) {
           className="absolute top-full right-0 md:right-auto md:left-0 w-64 md:w-80 bg-white shadow-lg border border-blue-200 rounded-md z-50"
 
         >
+          {/*Itera sobre menuItems y crea un botón por cada item. */}
           <ul className="flex flex-col items-end text-blue-800 py-4 space-y-2 font-medium">
             {menuItems.map((item) => (
               <li key={item.name} className="w-full">
