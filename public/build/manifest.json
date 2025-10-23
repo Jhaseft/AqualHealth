@@ -1,26 +1,133 @@
 {
-  "resources/js/Pages/Welcome.jsx": {
-    "file": "assets/Welcome-CAKegRZY.js",
-    "name": "Welcome",
-    "src": "resources/js/Pages/Welcome.jsx",
-    "isDynamicEntry": true,
+  "_Banner-Bjq9i1g6.js": {
+    "file": "assets/Banner-Bjq9i1g6.js",
+    "name": "Banner",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_ScrollToTopButton-1bsWHtjp.js": {
+    "file": "assets/ScrollToTopButton-1bsWHtjp.js",
+    "name": "ScrollToTopButton",
+    "imports": [
+      "resources/js/app.jsx",
+      "_createLucideIcon-Ck_Nu63_.js"
+    ]
+  },
+  "_createLucideIcon-Ck_Nu63_.js": {
+    "file": "assets/createLucideIcon-Ck_Nu63_.js",
+    "name": "createLucideIcon",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_swiper-BMrS7E5M.js": {
+    "file": "assets/swiper-BMrS7E5M.js",
+    "name": "swiper",
     "imports": [
       "resources/js/app.jsx"
     ],
     "css": [
-      "assets/Welcome-DLUS6Zxv.css"
+      "assets/swiper-C8ec8cn4.css"
+    ]
+  },
+  "_swiper-C8ec8cn4.css": {
+    "file": "assets/swiper-C8ec8cn4.css",
+    "src": "_swiper-C8ec8cn4.css"
+  },
+  "resources/js/Pages/CasosExito.jsx": {
+    "file": "assets/CasosExito-cLrkfv2L.js",
+    "name": "CasosExito",
+    "src": "resources/js/Pages/CasosExito.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_createLucideIcon-Ck_Nu63_.js",
+      "_ScrollToTopButton-1bsWHtjp.js",
+      "_Banner-Bjq9i1g6.js"
+    ]
+  },
+  "resources/js/Pages/ExecutiveTeam.jsx": {
+    "file": "assets/ExecutiveTeam-BkWQah-O.js",
+    "name": "ExecutiveTeam",
+    "src": "resources/js/Pages/ExecutiveTeam.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_createLucideIcon-Ck_Nu63_.js",
+      "_ScrollToTopButton-1bsWHtjp.js",
+      "_Banner-Bjq9i1g6.js"
+    ]
+  },
+  "resources/js/Pages/Historia.jsx": {
+    "file": "assets/Historia-Jjg2NUO3.js",
+    "name": "Historia",
+    "src": "resources/js/Pages/Historia.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_createLucideIcon-Ck_Nu63_.js",
+      "_Banner-Bjq9i1g6.js"
+    ]
+  },
+  "resources/js/Pages/Politicas.jsx": {
+    "file": "assets/Politicas-DGSgMw6u.js",
+    "name": "Politicas",
+    "src": "resources/js/Pages/Politicas.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_createLucideIcon-Ck_Nu63_.js",
+      "_ScrollToTopButton-1bsWHtjp.js",
+      "_Banner-Bjq9i1g6.js"
+    ]
+  },
+  "resources/js/Pages/Welcome.jsx": {
+    "file": "assets/Welcome-DlzASKFU.js",
+    "name": "Welcome",
+    "src": "resources/js/Pages/Welcome.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_createLucideIcon-Ck_Nu63_.js",
+      "_swiper-BMrS7E5M.js",
+      "_ScrollToTopButton-1bsWHtjp.js"
+    ],
+    "css": [
+      "assets/Welcome-BSlPwyae.css"
+    ]
+  },
+  "resources/js/Pages/WhoWeAre.jsx": {
+    "file": "assets/WhoWeAre-C6itXnUs.js",
+    "name": "WhoWeAre",
+    "src": "resources/js/Pages/WhoWeAre.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_createLucideIcon-Ck_Nu63_.js",
+      "_swiper-BMrS7E5M.js",
+      "_ScrollToTopButton-1bsWHtjp.js",
+      "_Banner-Bjq9i1g6.js"
+    ],
+    "css": [
+      "assets/WhoWeAre-6AKkHmRK.css"
     ]
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-CSGpFgAA.js",
+    "file": "assets/app-Bg4W3ZUi.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
     "dynamicImports": [
-      "resources/js/Pages/Welcome.jsx"
+      "resources/js/Pages/CasosExito.jsx",
+      "resources/js/Pages/ExecutiveTeam.jsx",
+      "resources/js/Pages/Historia.jsx",
+      "resources/js/Pages/Politicas.jsx",
+      "resources/js/Pages/Welcome.jsx",
+      "resources/js/Pages/WhoWeAre.jsx"
     ],
     "css": [
-      "assets/app-CDlADbLt.css"
+      "assets/app-Cg46VyKc.css"
     ]
   }
 }
