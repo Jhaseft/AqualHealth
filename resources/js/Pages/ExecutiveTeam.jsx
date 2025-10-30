@@ -10,9 +10,17 @@ export default function ExecutiveTeam() {
         <>
             <Head title="Equipo directivo-AquaHealth" />
             <Header />
-            <Banner title="Equipo Directivo" description="Conoce a Nuestro Personal"/>
-            <ExecutiveTeamHeader />
-            <Footer/>
+            <Banner
+                title="Equipo Directivo"
+                description="Conoce a Nuestro Personal"
+                breadcrumb={[
+                    { label: "Home", href: "/" },
+                    { label: "Equipo-Directivo" },
+                ]}
+                imageUrl="https://res.cloudinary.com/dnbklbswg/image/upload/v1761087411/Operaciones_aqua_wqhiz1.jpg"
+            />
+            <ExecutiveTeamHeader/>
+            <Footer />
             <ScrollToTopButton />
         </>
     );

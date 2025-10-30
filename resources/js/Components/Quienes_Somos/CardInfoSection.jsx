@@ -41,10 +41,10 @@ export default function CardInfoSection({ data , imageScale = 1}) {
       transition: { duration: 0.7, ease: "easeOut", delay: 0.2 },
     },
   };
-
+//w-full flex flex-col md:flex-row my-10 rounded-xl shadow-lg overflow-hidden
     return (
     <motion.div
-      className={`flex flex-col md:flex-row items-start gap-6 p-6 md:p-8 rounded-lg shadow-lg ${bgColor} mb-8`}
+      className={`flex flex-col md:flex-row w-full overflow-hidden items-stretch gap-6 p-6 md:p-8 rounded-lg shadow-lg ${bgColor} mb-8`}
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"

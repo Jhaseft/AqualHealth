@@ -1,25 +1,27 @@
 import Header from "@/Components/Inicio/Header/Header";
 import { Head } from "@inertiajs/react";
 import Footer from "@/Layouts/Footer";
+import ScrollToTopButton from "@/Layouts/ScrollToTopButton";
 import Banner from "@/Components/Banner";
-import Linea from "@/Components/Historia/Linea";
+import ArmoChemicalPrincipal from "@/Components/ArmoQuimica/ArmoChemicalPrincipal";
 
-export default function Historia() {
+export default function ArmoChemical() {
     return (
         <>
-            <Head title="Historias-AquaHealth" />
+            <Head title="Armo-Quimica" />
             <Header />
             <Banner
-                title="Nuestra Historia"
-                description="Conoce la Historia de AquaHealth"
+                title="Armo química"
+                description="Armo Química, donde la ciencia y la sostenibilidad se encuentran."
                 breadcrumb={[
                     { label: "Home", href: "/" },
-                    { label: "Historia" },
+                    { label: "Armo-Quimica" },
                 ]}
                 imageUrl="https://res.cloudinary.com/dnbklbswg/image/upload/v1761087411/Operaciones_aqua_wqhiz1.jpg"
             />
-            <Linea />
+            <ArmoChemicalPrincipal/>
             <Footer />
+            <ScrollToTopButton />
         </>
     );
 }

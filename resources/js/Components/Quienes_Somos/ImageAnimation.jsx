@@ -6,7 +6,7 @@ export default function ImageAnimation({
   href = "",           // destino al hacer clic
   src,
   alt = "Imagen",
-  height = "h-32 md:h-48", // clases Tailwind para altura
+  height = "h-auto", // clases Tailwind para altura
   className = "",
   hoverScale = 1.05,   // factor de zoom al hacer hover
   hoverBrightness = 1.05, // brillo al hover

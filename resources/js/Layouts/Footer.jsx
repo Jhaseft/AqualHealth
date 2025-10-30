@@ -7,14 +7,14 @@ export default function Footer() {
   };
 
   const enlaces = [
-    { label: "Inicio", href: "#" },
+    { label: "Inicio", href: "/" },
     { label: "Servicios", href: "#" },
-    { label: "Casos de éxito", href: "#" },
+    { label: "Casos de éxito", href: "/CasosDeExito" },
     { label: "Contacto", href: "#" },
   ];
 
   return (
-    <footer className="bg-blue-900 text-white mt-10">
+    <footer className="bg-gray-800 text-white mt-10">
       <div className="max-w-7xl mx-auto py-12 px-6 md:px-16 flex flex-col md:flex-row justify-between gap-8">
         {/* Información de contacto */}
         <div>
@@ -45,7 +45,7 @@ export default function Footer() {
       </div>
 
       {/* Derechos de autor */}
-      <div className="bg-blue-800 text-center py-4 text-sm">
+      <div className="bg-gray-900 text-center py-4 text-sm">
         &copy; {new Date().getFullYear()} AquaHealth. Todos los derechos reservados.
       </div>
     </footer>

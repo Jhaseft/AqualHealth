@@ -1,25 +1,25 @@
+import Header from "@/Components/Inicio/Header/Header";
 import { Head } from "@inertiajs/react";
-import WhoWeAreHeader from "@/Components/Quienes_Somos/WhoWeAreHeader";
 import Footer from "@/Layouts/Footer";
 import ScrollToTopButton from "@/Layouts/ScrollToTopButton";
 import Banner from "@/Components/Banner";
-import Header from "@/Components/Inicio/Header/Header";
+import ProductsChemicalsPrincipal from "@/Components/ProductosQuimicos/ProductsChemicalsPrincipal";
 
-export default function WhoWeAre() {
+export default function ProductsChemicals() {
     return (
         <>
-            <Head title="Quiénes Somos-AquaHealth" />
+            <Head title="Productos quimicos" />
             <Header />
             <Banner
-                title="Quiénes Somos"
-                description="Conoce Quienes Somos"
+                title="Productos Químicos"
+                description="Armo Química, donde la ciencia y la sostenibilidad se encuentran."
                 breadcrumb={[
                     { label: "Home", href: "/" },
-                    { label: "Quienes-Somos" },
+                    { label: "Productos Químicos" },
                 ]}
                 imageUrl="https://res.cloudinary.com/dnbklbswg/image/upload/v1761087411/Operaciones_aqua_wqhiz1.jpg"
             />
-            <WhoWeAreHeader />
+            <ProductsChemicalsPrincipal/>
             <Footer />
             <ScrollToTopButton />
         </>
