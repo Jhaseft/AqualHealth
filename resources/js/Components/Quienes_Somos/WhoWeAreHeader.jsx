@@ -46,6 +46,7 @@ export default function WhoWeAreHeader() {
                 alt: "Visión Aqual Health",
                 hoverScale: 1.05,
                 hoverBrightness: 1.05,
+                
             },
             imageLeft: false, 
             bgColor: "bg-white",
@@ -68,22 +69,22 @@ export default function WhoWeAreHeader() {
         },
     ];
 
-    return (
-        <div className="min-h-screen bg-gradient-to-b bg-white">
-            <div className="container mx-auto px-4 py-8 md:py-12">
-                {sections.map((section, index) => (
-                    <CardInfoSection
-                        key={index}
-                        data={section}
-                        imageScale={1.2}
-                    />
-                ))}
-            </div>
+   return (
+    <div className="bg-white bg-gradient-to-b from-white via-gray-50 to-white">
+ 
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        {sections.map((section, index) => (
+          <CardInfoSection key={index} data={section} imageScale={1.2} />
+        ))}
+      </div>
 
-            <div className="w-full bg-blue-50 py-12"> {/* 🔹 Fondo celeste agregado aquí */}
-              
-                <ValoresCarousel values={valores} />
-            </div>
-        </div>
-    );
+  
+      <div className="w-full bg-blue-50 py-12 flex flex-col items-center">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">
+          Nuestros Valores
+        </h2>
+        <ValoresCarousel values={valores} />
+      </div>
+    </div>
+  );
 }

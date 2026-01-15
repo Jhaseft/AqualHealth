@@ -3,18 +3,18 @@ import React from "react";
 import ImageAnimation from "./ImageAnimation";
 import { motion } from "framer-motion";
 
-export default function CardInfoSection({ data , imageScale = 1}) {
-    const {
-        title,
-        paragraphs = [],
-        logo ,
-        imageLeft=false,
-        bgColor="bg-white"
-    } = data;
-    //data va almacenar los arreglos
-    // imageLeft = true → imagen a la izquierda
-    // imageLeft = false → imagen a la derecha (por defecto)
-     // 🔹 Variantes de animación
+export default function CardInfoSection({ data, imageScale = 1 }) {
+  const {
+    title,
+    paragraphs = [],
+    logo,
+    imageLeft = false,
+    bgColor = "bg-white"
+  } = data;
+  //data va almacenar los arreglos
+  // imageLeft = true → imagen a la izquierda
+  // imageLeft = false → imagen a la derecha (por defecto)
+  // 🔹 Variantes de animación
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -42,19 +42,18 @@ export default function CardInfoSection({ data , imageScale = 1}) {
     },
   };
 
-    return (
+  return (
     <motion.div
-      className={`flex flex-col md:flex-row items-start gap-6 p-6 md:p-8 rounded-lg shadow-lg ${bgColor} mb-8`}
+      className={`flex flex-col md:flex-row items-center md:items-start gap-6 p-6 md:p-8 rounded-lg shadow-lg ${bgColor} mb-8`}
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }} // 👈 solo anima cuando entra al viewport
+      viewport={{ once: true, amount: 0.2 }}
     >
-      {/* Columna del logo */}
       {logo && (
         <motion.div
-          className={`w-full md:w-2/5 flex justify-center items-start
-             order-last md:${imageLeft ? "order-first" : "order-last"}`}
+          className={`w-full h-full sm:w-3/4 md:w-2/5 max-w-[400px] flex justify-center items-start
+         order-last md:${imageLeft ? "order-first" : "order-last"}`}
           style={{
             transform: `scale(${imageScale})`,
             transformOrigin: "center",
@@ -66,25 +65,22 @@ export default function CardInfoSection({ data , imageScale = 1}) {
             href={logo.href}
             src={logo.src}
             alt={logo.alt}
-            height={logo.height}
+            height={8}
             hoverScale={logo.hoverScale}
             hoverBrightness={logo.hoverBrightness}
+            className="object-contain rounded-lg shadow-md transition-transform duration-300 ease-in-out"
           />
         </motion.div>
       )}
 
-      {/* Columna de texto */}
-      <motion.div 
-      className="w-full md:w-3/5 flex flex-col gap-4"
-      variants={textVariants}
-      >
-        {title && <h2 className="text-2xl font-bold">{title}</h2>}
+      <motion.div className="w-full md:w-3/5 flex flex-col gap-4" variants={textVariants}>
+        {title && <h2 className="text-2xl sm:text-3xl font-bold">{title}</h2>}
 
-        <div className="text-gray-600 space-y-3">
+        <div className="text-gray-600 space-y-4 text-base sm:text-lg leading-relaxed">
           {paragraphs.map((paragraph, index) => (
             <p
               key={index}
-              className="text-justify leading-relaxed"
+              className="text-justify"
               dangerouslySetInnerHTML={{ __html: paragraph }}
             />
           ))}
