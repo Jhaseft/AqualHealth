@@ -16,7 +16,7 @@
              Meta Open Graph para redes sociales
              =========================== -->
         <meta property="og:title" content="AquaHealth" />
-        <meta property="og:description" content="oluciones de ingeniería en tratamiento del agua " />
+        <meta property="og:description" content="Soluciones de ingeniería en tratamiento del agua " />
         <meta property="og:image" content="{{ asset('https://res.cloudinary.com/dnbklbswg/image/upload/v1760232136/Logo_gota_hjxenu.png') }}" />
         <meta property="og:url" content="{{ url('/') }}" />
         <meta property="og:type" content="website" />
