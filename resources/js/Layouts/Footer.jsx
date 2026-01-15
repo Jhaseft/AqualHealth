@@ -23,12 +23,12 @@ export default function Footer() {
       telefono: "(+591 - 4) 4334062"
     },
     {
-      ciudad: "Cochabamba",
+      ciudad: "Quillacollo",
       direccion: "c/ Tres Chorros y Suarez Miranda",
       telefono: "(+591) 68830208"
     },
     {
-      ciudad: "Quillacollo",
+      ciudad: "Cochabamba",
       direccion: "SUPERMALL, Av. Calle Blanco Galindo (Piso 1 No34)",
       telefono: "+591 77427374"
     }
