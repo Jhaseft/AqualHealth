@@ -40,7 +40,8 @@ RUN npm ci
 RUN npm run build
 
 # Crear archivo SQLite si no existe
-RUN touch database/database.sqlite \
+RUN mkdir -p database \
+    && touch database/database.sqlite \
     && chown www-data:www-data database/database.sqlite \
     && chmod 664 database/database.sqlite
 
@@ -51,5 +52,5 @@ RUN chown -R www-data:www-data storage bootstrap/cache \
 # Exponer puerto
 EXPOSE 8080
 
-# Comando para iniciar el servidor PHP embebido usando variable PORT
-CMD ["sh", "-c", "php -S 0.0.0.0:${PORT:-8080} -t public"]
+# Comando para iniciar servidor PHP y correr migraciones si no existen tablas
+CMD ["sh", "-c", "php artisan migrate --force && php -S 0.0.0.0:${PORT:-8080} -t public"]
