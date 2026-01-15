@@ -24,13 +24,13 @@ export default function ContactoContent() {
       icon: "🏪"
     },
     {
-      ciudad: "Cochabamba",
+      ciudad: "Quillacollo",
       direccion: "c/ Tres Chorros y Suarez Miranda",
       telefono: "(+591) 68830208",
       icon: "🏬"
     },
     {
-      ciudad: "Quillacollo",
+      ciudad: "Cochamba",
       direccion: "SUPERMALL, Av. Calle Blanco Galindo (Piso 1 No34)",
       telefono: "+591 77427374",
       icon: "🏛️"
