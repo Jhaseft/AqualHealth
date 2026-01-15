@@ -22,7 +22,7 @@ export default function ValoresCarousel({ values = [] }) {
 
     return (
         <div className="w-full max-w-3xl mx-auto py-12 px-4 relative">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+            <h2 className="text-3xl md:text-6xl font-bold text-center mb-8">
                 Nuestros Valores
             </h2>
 

@@ -80,9 +80,6 @@ export default function WhoWeAreHeader() {
 
   
       <div className="w-full bg-blue-50 py-12 flex flex-col items-center">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">
-          Nuestros Valores
-        </h2>
         <ValoresCarousel values={valores} />
       </div>
     </div>
