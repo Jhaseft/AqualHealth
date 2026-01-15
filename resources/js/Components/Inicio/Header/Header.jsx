@@ -85,7 +85,7 @@ export default function Header() {
                         </a>
 
                         <a
-                            href="https://www.facebook.com/WWF?mibextid=9R9pXO"
+                            href="https://www.facebook.com/profile.php?id=100093996880986"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-blue-600 text-white p-3 rounded-full transform transition duration-300 hover:scale-125"
