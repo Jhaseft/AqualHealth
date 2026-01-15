@@ -37,8 +37,8 @@ export default function ValoresCarousel({ values = [] }) {
                 spaceBetween={30}
                 slidesPerView={1}
                 loop={true}
-                effect="slide" // 🔹 efecto de desplazamiento suave (por defecto)
-                speed={1500} // 🔹 duración del desplazamiento (ms)
+                effect="slide" //  efecto de desplazamiento suave (por defecto)
+                speed={1500} //  duración del desplazamiento (ms)
             >
                 {values.map((valor, index) => (
                     <SwiperSlide key={index}>
@@ -51,8 +51,8 @@ export default function ValoresCarousel({ values = [] }) {
                             }}
                         >
                             <motion.p
-                                key={activeIndex} // 🔹 fuerza la reanimación cada vez que cambia el slide
-                                className="text-center text-xl md:text-2xl font-semibold text-white"
+                                key={activeIndex} //  fuerza la reanimación cada vez que cambia el slide
+                                className="text-center text-xl md:text-7xl font-semibold text-black"
                                 initial="hidden"
                                 animate="visible"
                                 variants={textVariants}
@@ -60,12 +60,12 @@ export default function ValoresCarousel({ values = [] }) {
                                 {valor.text}
                             </motion.p>
 
-                            {/* Botones visibles */}
+                           
                             <button
                                 className="prev-btn left-2 absolute top-1/2 -translate-y-1/2 text-2xl bg-black bg-opacity-30 text-white p-3 rounded-full hover:bg-opacity-50 z-10"
                                 style={{
                                     borderImage:
-                                        "linear-gradient(to right, #06b6d4, #3b82f6) 1", // 🔹 Borde degradado
+                                        "linear-gradient(to right, #06b6d4, #3b82f6) 1", //  Borde degradado
                                 }}
                                 onClick={() => swiperInstance?.slidePrev()}
                             >

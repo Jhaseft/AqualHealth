@@ -12,7 +12,7 @@ export default function WhoWeAreHeader() {
                 "A través de nuestras alianzas estratégicas nacionales e internacionales propondremos la mejor solución, garantizando la satisfacion en la conclusión de cada proyecto.",
             ],
             logo: {
-                src: "https://res.cloudinary.com/dcyx3nqj5/image/upload/v1761103013/samples/animals/reindeer.jpg",
+                src: "https://res.cloudinary.com/dnbklbswg/image/upload/v1768509205/DSC_6247_1_yy7mvj.jpg",
                 alt: "Aqual Health",
                 href: "https://tuSitio.com",
                 hoverScale: 1.05,
@@ -27,7 +27,7 @@ export default function WhoWeAreHeader() {
                 "El compromiso de brindar una solución con tecnologías innovadoras a la medida de las necesidades de nuestros clientes comerciales, residenciales e industriales en materia de consultoría, tecnologías en temas de tratamiento de agua y gestión ambiental, nos obliga a brindar ingeniería confiable y ofrecer equipos y sistemas de avanzada tecnología, respaldada en un exelente servicio de asesoría post venta, que demuestra nuestro profecional.",
             ],
             logo: {
-                src: "https://res.cloudinary.com/dcyx3nqj5/image/upload/v1761103032/cld-sample-2.jpg",
+                src: "https://res.cloudinary.com/dnbklbswg/image/upload/v1760223620/Fondo_Aquahealth_bkze5p.jpg",
                 alt: "Misión Aqual Health",
                 hoverScale: 1.05,
                 hoverBrightness: 1.05,
@@ -42,7 +42,7 @@ export default function WhoWeAreHeader() {
                 "Mantener los principios de calidad, seguridad y sobre todo cuidado del medio ambiente desarrollando tecnologías aplicadas a servicios especializados de asesoría en sistemas de tratamiento de agua y la excelencia en la gestión ambiental.",
             ],
             logo: {
-                src: "https://res.cloudinary.com/dcyx3nqj5/image/upload/v1761103012/samples/ecommerce/analog-classic.jpg",
+                src: "https://res.cloudinary.com/dnbklbswg/image/upload/v1768508732/WhatsApp_Image_2026-01-15_at_16.17.38_so7jcv.jpg",
                 alt: "Visión Aqual Health",
                 hoverScale: 1.05,
                 hoverBrightness: 1.05,
@@ -56,18 +56,15 @@ export default function WhoWeAreHeader() {
     const valores = [
         {
             text: "Integridad en todo lo que hacemos",
-            bgImage:
-                "https://res.cloudinary.com/dcyx3nqj5/image/upload/v1761103028/samples/coffee.jpg",
+            
         },
         {
             text: "Trabajo en equipo para lograr más",
-            bgImage:
-                "https://res.cloudinary.com/dcyx3nqj5/image/upload/v1761103032/cld-sample-2.jpg",
+          
         },
         {
             text: "Innovación constante",
-            bgImage:
-                "https://res.cloudinary.com/dcyx3nqj5/image/upload/v1761103016/samples/animals/three-dogs.jpg",
+           
         },
     ];
 
