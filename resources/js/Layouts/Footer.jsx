@@ -41,7 +41,7 @@ export default function Footer() {
     { label: "Nuestra Historia", href: "/Historia" },
     { label: "Políticas", href: "/Politicas" },
     { label: "Casos De Éxito", href: "/CasosDeExito" },
-    { label: "Casos De Éxito", href: "/Contacto" },
+    { label: "Contacto", href: "/Contacto" },
   ];
 
   const lineasNegocio = [
