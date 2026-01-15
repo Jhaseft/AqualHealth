@@ -28,6 +28,26 @@ Route::get('/Contacto', function () {
     ]);
 });
 
+Route::get('/ingenieria-&-consultoria', function () {
+    return Inertia::render('IngenieriaConsultoria', []);
+});
+
+Route::get('/plantas-&-equipos', function () {
+    return Inertia::render('PlantasEquipos', []);
+});
+
+Route::get('/armo-quimica', function () {
+    return Inertia::render('ArmoQuimica', []);
+});
+
+Route::get('/productos-quimicos', function () {
+    return Inertia::render('ProductosQuimicos', []);
+});
+
+Route::get('/capacidad-&-entretenimiento', function () {
+    return Inertia::render('CapacitacionEntrenamiento', []);
+});
+
 //incluir las rutas de quienes somos
 require __DIR__ . '/whoWeAreRoute.php';
 require __DIR__ . '/ExecutiveTeamRoute.php';
