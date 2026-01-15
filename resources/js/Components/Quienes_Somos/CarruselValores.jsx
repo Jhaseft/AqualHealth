@@ -52,7 +52,7 @@ export default function ValoresCarousel({ values = [] }) {
                         >
                             <motion.p
                                 key={activeIndex} //  fuerza la reanimación cada vez que cambia el slide
-                                className="text-center text-xl md:text-7xl font-semibold text-black"
+                                className="text-center text-xl md:text-7xl font-semibold text-white"
                                 initial="hidden"
                                 animate="visible"
                                 variants={textVariants}

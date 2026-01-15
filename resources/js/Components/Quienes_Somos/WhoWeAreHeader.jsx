@@ -8,7 +8,7 @@ export default function WhoWeAreHeader() {
         {
             title: "Sobre Nosotros",
             paragraphs: [
-                'Es una empresa de <span class="font-semibold">"XR" Business Group</span>, que trabaja con principios de ética y responsabilidad buscando mantener a la naturaleza intacta, cuidando el medio ambiente para el bienestar de generaciones futuras.',
+                'Es una empresa de <span class="font-semibold">"AR" Business Group</span>, que trabaja con principios de ética y responsabilidad buscando mantener a la naturaleza intacta, cuidando el medio ambiente para el bienestar de generaciones futuras.',
                 "A través de nuestras alianzas estratégicas nacionales e internacionales propondremos la mejor solución, garantizando la satisfacion en la conclusión de cada proyecto.",
             ],
             logo: {
@@ -57,15 +57,18 @@ export default function WhoWeAreHeader() {
     const valores = [
         {
             text: "Integridad en todo lo que hacemos",
-            
+             bgImage:
+                "https://res.cloudinary.com/dnbklbswg/image/upload/v1761087411/Operaciones_aqua_wqhiz1.jpg",
         },
         {
             text: "Trabajo en equipo para lograr más",
-          
+             bgImage:
+                "https://res.cloudinary.com/dnbklbswg/image/upload/v1761087411/Operaciones_aqua_wqhiz1.jpg",
         },
         {
             text: "Innovación constante",
-           
+            bgImage:
+                "https://res.cloudinary.com/dnbklbswg/image/upload/v1761087411/Operaciones_aqua_wqhiz1.jpg",
         },
     ];
 
