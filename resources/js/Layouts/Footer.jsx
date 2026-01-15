@@ -1,4 +1,15 @@
 // Footer.jsx
+import {  Linkedin } from "lucide-react"; // LinkedIn de Lucide
+import { SiTiktok, SiYoutube, SiFacebook, SiInstagram, SiGmail, SiX } from "@icons-pack/react-simple-icons";
+const socialIcons = [
+    { Icon: SiTiktok, name: 'TikTok', href: 'https://www.tiktok.com/@aquahealthbo?_t=8fpmMbmSosg&_r=1' },
+    { Icon: Linkedin, name: 'LinkedIn', href: 'https://linkedin.com' },
+    { Icon: SiGmail, name: 'Email', href: 'mailto:info@aquahealth.com.bo' },
+    { Icon: SiYoutube, name: 'YouTube', href: 'https://youtube.com' },
+    { Icon: SiFacebook, name: 'Facebook', href: 'https://www.facebook.com/profile.php?id=100093996880986' },
+    { Icon: SiInstagram, name: 'Instagram', href: 'https://instagram.com/aqua_healthbolivia?igshid=MzMyNGUyNmU2YQ==' },
+  ];
+ 
 export default function Footer() {
   const ubicaciones = [
     {
@@ -44,11 +55,11 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-br mt-10 from-blue-950 via-blue-900 to-blue-950 text-white">
       <div className="max-w-7xl mx-auto py-16 px-6 md:px-12">
-        
-   
+
+
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mb-12">
-          
- 
+
+
           <div className="col-span-2 lg:col-span-1">
             <h3 className="text-xl font-bold mb-6 text-blue-300 flex items-center gap-2">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -75,7 +86,7 @@ export default function Footer() {
             </div>
           </div>
 
-    
+
           <div>
             <h3 className="text-xl font-bold mb-6 text-blue-300 flex items-center gap-2">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -98,7 +109,7 @@ export default function Footer() {
             </ul>
           </div>
 
-       
+
           <div>
             <h3 className="text-xl font-bold mb-6 text-blue-300 flex items-center gap-2">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -116,12 +127,12 @@ export default function Footer() {
           </div>
         </div>
 
-      
+
         <div className="border-t border-blue-800 pt-8 mb-8">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
-            <a 
-              href="https://www.aquahealth.com.bo" 
-              target="_blank" 
+            <a
+              href="https://www.aquahealth.com.bo"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-blue-300 hover:text-blue-200 transition-colors duration-300 group"
             >
@@ -130,10 +141,10 @@ export default function Footer() {
               </svg>
               <span className="font-medium">www.aquahealth.com.bo</span>
             </a>
-            
+
             <div className="flex items-center gap-6">
-              <a 
-                href="mailto:info@aquahealth.com.bo" 
+              <a
+                href="mailto:info@aquahealth.com.bo"
                 className="flex items-center gap-2 text-gray-300 hover:text-blue-300 transition-colors duration-300"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -142,11 +153,28 @@ export default function Footer() {
                 <span className="text-sm">info@aquahealth.com.bo</span>
               </a>
             </div>
+
+          
+            <div className="flex items-center gap-4">
+              {socialIcons.map(({ Icon, name, href }, index) => (
+                <a
+                  key={index}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={name}
+                  className="text-gray-300 hover:text-blue-400 transition-colors duration-300"
+                >
+                  <Icon className="w-5 h-5" />
+                </a>
+              ))}
+            </div>
+
           </div>
         </div>
       </div>
 
-   
+
       <div className="bg-blue-950/80 backdrop-blur-sm border-t border-blue-800">
         <div className="max-w-7xl mx-auto py-6 px-6 md:px-12">
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-sm text-gray-400">
