@@ -63,7 +63,7 @@ export default function Resumen() {
                 animate={controls}
                 className="flex flex-col md:flex-row gap-10 md:gap-20 text-center bg-black/50 p-6 md:p-10 rounded-2xl backdrop-blur-sm"
             >
-                {/* Agua producida */}
+               
                 <motion.div variants={item}>
                     <h3 className="text-2xl md:text-4xl font-bold">
                         <CountUp end={2412000} duration={4.5} separator="," /> M³
@@ -72,7 +72,7 @@ export default function Resumen() {
                     <p className="text-sm">Volumen tratado de agua</p>
                 </motion.div>
 
-                {/* Agua regenerada */}
+               
                 <motion.div variants={item}>
                     <h3 className="text-2xl md:text-4xl font-bold">
                         <CountUp end={2021760} duration={4.5} separator="," /> M³
@@ -81,7 +81,6 @@ export default function Resumen() {
                     <p className="text-sm">Volumen tratado de agua residual</p>
                 </motion.div>
 
-                {/* Empresas satisfechas */}
                 <motion.div variants={item}>
                     <h3 className="text-2xl md:text-4xl font-bold">
                         <CountUp end={64} duration={4.5} /> Empresas

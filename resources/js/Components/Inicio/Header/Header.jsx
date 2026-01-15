@@ -41,14 +41,14 @@ export default function Header() {
                 { name: "CAPACITACIÓN & ENTRENAMIENTO", link: "#" },
             ],
         },
-        { name: "Contáctanos", link: "/" },
+        { name: "Contáctanos", link: "/Contacto" },
     ];
 
     return (
         <header className="w-full bg-white shadow-sm border-b border-gray-200">
             <nav className="w-full flex justify-between items-center px-6 md:px-10 py-4 relative">
                 
-                {/* Logo clickeable con animación */}
+             
                 <a
                     href="/"
                     className="flex items-center transform transition duration-300 hover:scale-105 hover:brightness-110"
@@ -60,13 +60,13 @@ export default function Header() {
                     />
                 </a>
 
-                {/* Menú + Redes sociales */}
+              
                 <div className="flex items-center space-x-16">
                     <DesktopMenu menuItems={menuItems} />
 
-                    {/* Redes sociales (solo desktop) */}
+                  
                     <div className="hidden md:flex items-center space-x-3">
-                        {/* TikTok */}
+                      
                         <a
                             href="https://www.tiktok.com/@aquahealthbo?_t=8fpmMbmSosg&_r=1 "
                             target="_blank"
@@ -75,8 +75,6 @@ export default function Header() {
                         >
                             <FaTiktok size={20} />
                         </a>
-
-                        {/* Instagram */}
                         <a
                             href="https://instagram.com/aqua_healthbolivia?igshid=MzMyNGUyNmU2YQ=="
                             target="_blank"
@@ -86,7 +84,6 @@ export default function Header() {
                             <FaInstagram size={20} />
                         </a>
 
-                        {/* Facebook */}
                         <a
                             href="https://www.facebook.com/WWF?mibextid=9R9pXO"
                             target="_blank"
@@ -97,7 +94,7 @@ export default function Header() {
                         </a>
                     </div>
 
-                    {/* Botón hamburguesa (solo mobile) */}
+
                     <HamburgerButton isOpen={menuOpen} toggle={toggleMenu}  />
                 </div>
 

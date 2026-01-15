@@ -1,9 +1,9 @@
 // components/WhoWeAreHeader.jsx
-import CardInfoSection from "./CardInfoSection";
-import ValoresCarousel from "./CarruselValores";
+import CardInfoSection from "./CardInfoSection"
+import ValoresCarousel from "./CarruselValores"
 
 export default function WhoWeAreHeader() {
-    // Arreglo con todas las secciones
+    
     const sections = [
         {
             title: "Sobre Nosotros",
@@ -18,7 +18,7 @@ export default function WhoWeAreHeader() {
                 hoverScale: 1.05,
                 hoverBrightness: 1.05,
             },
-            imageLeft: false, // ✅ Imagen a la izquierda
+            imageLeft: false, 
             bgColor: "bg-gray-50",
         },
         {
@@ -32,7 +32,7 @@ export default function WhoWeAreHeader() {
                 hoverScale: 1.05,
                 hoverBrightness: 1.05,
             },
-            imageLeft: true, // ✅ Imagen a la izquierda
+            imageLeft: true, 
             bgColor: "bg-blue-50",
         },
         {
@@ -47,7 +47,7 @@ export default function WhoWeAreHeader() {
                 hoverScale: 1.05,
                 hoverBrightness: 1.05,
             },
-            imageLeft: false, // ✅ Imagen a la derecha
+            imageLeft: false, 
             bgColor: "bg-white",
         },
     ];
@@ -84,7 +84,7 @@ export default function WhoWeAreHeader() {
             </div>
 
             <div className="w-full bg-blue-50 py-12"> {/* 🔹 Fondo celeste agregado aquí */}
-                {/* Carrusel de Valores */}
+              
                 <ValoresCarousel values={valores} />
             </div>
         </div>

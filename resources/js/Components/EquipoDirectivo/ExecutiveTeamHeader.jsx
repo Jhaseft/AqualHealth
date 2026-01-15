@@ -1,58 +1,46 @@
 // components/WhoWeAreHeader.jsx
 import React from "react";
-import TeamCardGrid from "./TeamCardGrid";
-
+import CarruselFotos from "@/Components/Fotos/CarruselFotos3";
 export default function ExecutiveTeamHeader() {
-    const members = [
-        {
-            name: "Juan Pérez",
-            role: "CEO",
-            image: "https://res.cloudinary.com/dcyx3nqj5/image/upload/v1761103016/samples/people/boy-snow-hoodie.jpg",
-            description:
-                "Encargado de liderar la estrategia global de la compañía.",
-        },
-        {
-            name: "Ana Gómez",
-            role: "CFO",
-            image: "https://res.cloudinary.com/dcyx3nqj5/image/upload/v1761103033/main-sample.png",
-            description:
-                "Responsable de la gestión financiera y planificación.",
-        },
-        {
-            name: "Luis Ramírez",
-            role: "CTO",
-            image: "https://res.cloudinary.com/dcyx3nqj5/image/upload/v1761103026/samples/look-up.jpg",
-            description:
-                "Supervisa la innovación tecnológica y desarrollo de productos.",
-        },
-        {
-            name: "Diego fernando",
-            role: "CEO",
-            image: "https://res.cloudinary.com/dcyx3nqj5/image/upload/v1761103025/samples/smile.jpg",
-            description:
-                "Encargado de liderar la estrategia global de la compañía.",
-        },
-        {
-            name: "Jhoel Paredes",
-            role: "CFO",
-            image: "https://res.cloudinary.com/dcyx3nqj5/image/upload/v1761103012/samples/animals/cat.jpg",
-            description:
-                "Responsable de la gestión financiera y planificación.",
-        },
-        {
-            name: "rene solarez",
-            role: "CTO",
-            image: "https://res.cloudinary.com/dcyx3nqj5/image/upload/v1761103029/samples/woman-on-a-football-field.jpg",
-            description:
-                "Supervisa la innovación tecnológica y desarrollo de productos.",
-        },
-    ];
+
+  const members = [
+  {
+    public_id: "foto1",
+    secure_url: "/images/DSC_6247.jpg",
+    title: "Equipo Directivo",
+    description: "Liderando con visión, compromiso y responsabilidad hacia un futuro sostenible",
+  },
+  {
+    public_id: "foto2",
+    secure_url: "/images/_DSC2310.jpg",
+    title: "Liderazgo Estratégico",
+    description: "Un equipo multidisciplinario enfocado en la toma de decisiones que generan impacto real",
+  },
+  {
+    public_id: "foto3",
+    secure_url: "/images/_DSC2313.jpg",
+    title: "Trabajo Colaborativo",
+    description: "La unión de experiencia, conocimiento y valores que impulsan nuestra organización",
+  },
+  {
+    public_id: "foto4",
+    secure_url: "/images/_DSC2321.jpg",
+    title: "Compromiso ",
+    description: "Profesionales alineados con la excelencia, la innovación y el desarrollo sostenible",
+  },
+  {
+    public_id: "foto5",
+    secure_url: "/images/DSC_6244.jpg",
+    title: "Visión Compartida",
+    description: "Decisiones responsables hoy para construir el futuro del mañana",
+  },
+];
+
+
+
     return (
-        <div className="min-h-screen bg-gradient-to-b bg-white">
-            
-            <div className="max-w-6xl mx-auto px-6">
-                <TeamCardGrid members={members} />
-            </div>
+        <div className="md:pt-8 bg-gradient-to-b bg-white">
+            <CarruselFotos images={members} />
         </div>
     );
 }
