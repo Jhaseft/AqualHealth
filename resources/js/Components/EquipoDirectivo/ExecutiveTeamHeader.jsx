@@ -6,31 +6,31 @@ export default function ExecutiveTeamHeader() {
   const members = [
   {
     public_id: "foto1",
-    secure_url: "/images/DSC_6247.jpg",
+    secure_url: "https://res.cloudinary.com/dnbklbswg/image/upload/v1768509205/DSC_6247_1_yy7mvj.jpg",
     title: "Equipo Directivo",
     description: "Liderando con visión, compromiso y responsabilidad hacia un futuro sostenible",
   },
   {
     public_id: "foto2",
-    secure_url: "/images/_DSC2310.jpg",
+    secure_url: "https://res.cloudinary.com/dnbklbswg/image/upload/v1768509238/_DSC2310_1_jklznu.jpg",
     title: "Liderazgo Estratégico",
     description: "Un equipo multidisciplinario enfocado en la toma de decisiones que generan impacto real",
   },
   {
     public_id: "foto3",
-    secure_url: "/images/_DSC2313.jpg",
+    secure_url: "https://res.cloudinary.com/dnbklbswg/image/upload/v1768509265/_DSC2313_1_pntx4t.jpg",
     title: "Trabajo Colaborativo",
     description: "La unión de experiencia, conocimiento y valores que impulsan nuestra organización",
   },
   {
     public_id: "foto4",
-    secure_url: "/images/_DSC2321.jpg",
+    secure_url: "https://res.cloudinary.com/dnbklbswg/image/upload/v1768509293/_DSC2321_1_ohwxle.jpg",
     title: "Compromiso ",
     description: "Profesionales alineados con la excelencia, la innovación y el desarrollo sostenible",
   },
   {
     public_id: "foto5",
-    secure_url: "/images/DSC_6244.jpg",
+    secure_url: "https://res.cloudinary.com/dnbklbswg/image/upload/v1768509329/DSC_6244_1_izhlky.jpg",
     title: "Visión Compartida",
     description: "Decisiones responsables hoy para construir el futuro del mañana",
   },
