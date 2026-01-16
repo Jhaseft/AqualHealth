@@ -27,7 +27,7 @@ export default function WhoWeAreHeader() {
                 "El compromiso de brindar una solución con tecnologías innovadoras a la medida de las necesidades de nuestros clientes comerciales, residenciales e industriales en materia de consultoría, tecnologías en temas de tratamiento de agua y gestión ambiental, nos obliga a brindar ingeniería confiable y ofrecer equipos y sistemas de avanzada tecnología, respaldada en un exelente servicio de asesoría post venta, que demuestra nuestro profecional.",
             ],
             logo: {
-                src: "https://res.cloudinary.com/dnbklbswg/image/upload/v1760223620/Fondo_Aquahealth_bkze5p.jpg",
+                src: "https://res.cloudinary.com/dnbklbswg/image/upload/v1768512528/33ba4501-b7a4-4c70-84b6-525e2255b794.png",
                 alt: "Misión Aqual Health",
                 hoverScale: 1.05,
                 hoverBrightness: 1.05,
@@ -42,7 +42,7 @@ export default function WhoWeAreHeader() {
                 "Mantener los principios de calidad, seguridad y sobre todo cuidado del medio ambiente desarrollando tecnologías aplicadas a servicios especializados de asesoría en sistemas de tratamiento de agua y la excelencia en la gestión ambiental.",
             ],
             logo: {
-                src: "https://res.cloudinary.com/dnbklbswg/image/upload/v1768508732/WhatsApp_Image_2026-01-15_at_16.17.38_so7jcv.jpg",
+                src: "https://res.cloudinary.com/dnbklbswg/image/upload/v1760223620/Fondo_Aquahealth_bkze5p.jpg",
                 alt: "Visión Aqual Health",
                 hoverScale: 1.05,
                 hoverBrightness: 1.05,
