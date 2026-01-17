@@ -2,12 +2,11 @@
 import {  Linkedin } from "lucide-react"; // LinkedIn de Lucide
 import { SiTiktok, SiYoutube, SiFacebook, SiInstagram, SiGmail, SiX } from "@icons-pack/react-simple-icons";
 const socialIcons = [
-    { Icon: SiTiktok, name: 'TikTok', href: 'https://www.tiktok.com/@aquahealthbo?_t=8fpmMbmSosg&_r=1' },
-    { Icon: Linkedin, name: 'LinkedIn', href: 'https://linkedin.com' },
+    { Icon: SiTiktok, name: 'TikTok', href: 'https://www.tiktok.com/@aquahealthbolivia?_r=1&_t=ZM-937dYVCpbg4' },
+    { Icon: Linkedin, name: 'LinkedIn', href: 'https://www.linkedin.com/company/aqua-health-bolivia/' },
     { Icon: SiGmail, name: 'Email', href: 'mailto:info@aquahealth.com.bo' },
-    { Icon: SiYoutube, name: 'YouTube', href: 'https://youtube.com' },
     { Icon: SiFacebook, name: 'Facebook', href: 'https://www.facebook.com/profile.php?id=100093996880986' },
-    { Icon: SiInstagram, name: 'Instagram', href: 'https://instagram.com/aqua_healthbolivia?igshid=MzMyNGUyNmU2YQ==' },
+    { Icon: SiInstagram, name: 'Instagram', href: 'https://www.instagram.com/aqua_healthbolivia' },
   ];
  
 export default function Footer() {
@@ -43,13 +42,13 @@ export default function Footer() {
     { label: "Casos De Éxito", href: "/CasosDeExito" },
     { label: "Contacto", href: "/Contacto" },
   ];
-
-  const lineasNegocio = [
-    "INGENIERÍA & CONSULTORÍA",
-    "PLANTAS & EQUIPOS",
-    "ARMO QUÍMICA",
-    "PRODUCTOS QUÍMICOS",
-    "CAPACITACIÓN & ENTRENAMIENTO"
+   
+const lineasNegocio = [
+    {label:"INGENIERÍA & CONSULTORÍA",href:"ingenieria-&-consultoria"},
+    {label:"PLANTAS & EQUIPOS",href:"plantas-&-equipos"},
+    {label:"ARMO QUÍMICA",href:"armo-quimica"},
+    {label:"PRODUCTOS QUÍMICOS",href:"productos-quimicos"},
+    {label:"CAPACITACIÓN & ENTRENAMIENTO",href:"capacidad-&-entretenimiento"},
   ];
 
   return (
@@ -119,9 +118,16 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               {lineasNegocio.map((linea, index) => (
-                <li key={index} className="text-sm text-gray-300 leading-relaxed hover:text-blue-300 transition-colors duration-300 cursor-pointer">
-                  {linea}
+                <li key={index}>
+                     <a
+                    href={linea.href}
+                    className="text-sm text-gray-300 leading-relaxed hover:text-blue-300 transition-colors duration-300 cursor-pointer"
+                  >
+                    <span className="w-1.5 h-1.5 bg-blue-400 rounded-full group-hover:w-2 group-hover:h-2 transition-all duration-300"></span>
+                    {linea.label}
+                  </a>
                 </li>
+                
               ))}
             </ul>
           </div>

@@ -9,7 +9,7 @@ export default function IngenieriaConsultoria() {
 const lineasDeNegocio = [
     {
         titulo: "INGENIERÍA & CONSULTORÍA",
-        imagen: "https://res.cloudinary.com/dnbklbswg/image/upload/v1768530976/68fa35e6-06cf-409f-b5c0-4240452062fb.png", // Reemplaza con tu imagen
+        imagen: "https://res.cloudinary.com/dnbklbswg/image/upload/v1768621332/WhatsApp_Image_2026-01-16_at_23.00.22_feealh.jpg", // Reemplaza con tu imagen
         servicios: [
             "Diseño y Construcción de Plantas",
             "Consultoría Técnica del Agua",

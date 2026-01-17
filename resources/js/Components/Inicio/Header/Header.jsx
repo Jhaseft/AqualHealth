@@ -10,8 +10,8 @@ export default function Header() {
 
     const toggleMenu = () => setMenuOpen((prev) => !prev);
     const socialIcons = [
-        { Icon: SiTiktok, name: "TikTok", href: "https://www.tiktok.com/@aquahealthbo" },
-        { Icon: SiInstagram, name: "Instagram", href: "https://instagram.com/aqua_healthbolivia" },
+        { Icon: SiTiktok, name: "TikTok", href: "https://www.tiktok.com/@aquahealthbolivia?_r=1&_t=ZM-937dYVCpbg4" },
+        { Icon: SiInstagram, name: "Instagram", href: "https://www.instagram.com/aqua_healthbolivia" },
         { Icon: SiFacebook, name: "Facebook", href: "https://www.facebook.com/profile.php?id=100093996880986" },
     ];
 

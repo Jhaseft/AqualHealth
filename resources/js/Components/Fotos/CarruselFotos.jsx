@@ -46,7 +46,6 @@ const fadeIn = {
           <SwiperSlide key={index}>
             <div className="relative w-full h-[75vh] md:h-[90vh] overflow-hidden flex justify-center items-center">
               
-              {/* Imagen de fondo */}
               <motion.img
                 src={img.secure_url}
                 alt={img.public_id || `slide-${index}`}
@@ -55,11 +54,9 @@ const fadeIn = {
                 variants={fadeIn}
                 className="absolute inset-0 w-full h-full object-cover object-center"
               />
-
-              {/* Capa oscura */}
+ 
               <div className="absolute inset-0 bg-black bg-opacity-40" />
 
-              {/* Texto superior */}
               {img.topText && (
                 <motion.div
                   variants={fadeDown}
@@ -67,13 +64,13 @@ const fadeIn = {
                   animate={index === currentIndex ? "visible" : "hidden"}
                   className="absolute top-28 w-full text-center text-white px-4"
                 >
-                  <h2 className="text-6xl md:text-7xl font-extrabold drop-shadow-lg">
+                  <h2 className="text-6xl md:text-8xl font-extrabold drop-shadow-lg">
                     {img.topText}
                   </h2>
                 </motion.div>
               )}
 
-              {/* Texto inferior izquierdo */}
+   
               {img.bottomLeft && (
                 <motion.div
                   variants={fadeLeft}
@@ -81,13 +78,13 @@ const fadeIn = {
                   animate={index === currentIndex ? "visible" : "hidden"}
                   className="absolute bottom-24 left-8 md:left-16 text-white"
                 >
-                  <p className="text-4xl md:text-6xl font-semibold drop-shadow-lg">
+                  <p className="text-4xl md:text-6xl text-center font-semibold drop-shadow-lg">
                     {img.bottomLeft}
                   </p>
                 </motion.div>
               )}
 
-              {/* Texto inferior derecho */}
+           
               {img.bottomRight && (
                 <motion.div
                   variants={fadeUp}
@@ -95,7 +92,7 @@ const fadeIn = {
                   animate={index === currentIndex ? "visible" : "hidden"}
                   className="absolute bottom-20 right-8 md:right-16 text-right text-white"
                 >
-                  <p className="text-4xl md:text-6xl font-semibold drop-shadow-lg">
+                  <p className="text-4xl md:text-5xl  font-semibold drop-shadow-lg">
                     {img.bottomRight}
                   </p>
                 </motion.div>

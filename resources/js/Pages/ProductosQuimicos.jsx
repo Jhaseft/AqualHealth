@@ -10,7 +10,7 @@ export default function ProductosQuimicos() {
     const lineasDeNegocio = [
     {
         titulo: "PRODUCTOS QUÍMICOS",
-        imagen: "https://res.cloudinary.com/dnbklbswg/image/upload/v1768530995/4c3f0e9b-d033-4a8a-ad6e-d6c8acb85685.png", // Reemplaza con tu imagen
+        imagen: "https://res.cloudinary.com/dnbklbswg/image/upload/v1768621308/WhatsApp_Image_2026-01-16_at_23.01.42_k1kxxe.jpg", // Reemplaza con tu imagen
         servicios: [
             "Calderos",
             "Enfriamiento",
