@@ -86,7 +86,7 @@ const casos = [
     imgLeft: false
   },
   {
-    imgSrc: "https://res.cloudinary.com/dnbklbswg/image/upload/v1768512605/Captura_de_pantalla_2026-01-15_172945_jmozbq.png", // Aquí coloca la URL de la imagen
+    imgSrc: "https://res.cloudinary.com/dnbklbswg/image/upload/v1768512605/Captura_de_pantalla_2026-01-15_172936_qi9tsx.png", // Aquí coloca la URL de la imagen
     descripcion: (
       <>
         <strong>SERVICIO DE DESARROLLO DE LAS EMPRESAS PÚBLICAS - SEDEM</strong> <br />
@@ -99,7 +99,7 @@ const casos = [
     imgLeft: true
   },
   {
-    imgSrc: "https://res.cloudinary.com/dnbklbswg/image/upload/v1768512605/Captura_de_pantalla_2026-01-15_172936_qi9tsx.png", // Aquí coloca la URL de la imagen
+    imgSrc: "https://res.cloudinary.com/dnbklbswg/image/upload/v1768512605/Captura_de_pantalla_2026-01-15_172945_jmozbq.png", // Aquí coloca la URL de la imagen
     descripcion: (
       <>
         <strong>MINISTERIO DE DESARROLLO PRODUCTIVO</strong> <br />

@@ -6,24 +6,45 @@ export default function CasosDeExito() {
     {
       titulo: "PLANTA INDUSTRIALIZADORA DE LA QUINUA",
       descripcion:
-        "La termoeléctrica requiere un alto caudal de agua para su operación cuya alternativa inicial era obtenerla de pozos subterráneos o fuentes superficiales.",
+        "PTAR de 345.6 m³/día para planta procesadora de quinua en Soracachi, Oruro. Sistema innovador con control de saponina mediante antiespumante, sedimentador lamelar, flotación por aire disuelto y reactores biológicos MBBR, garantizando cumplimiento de Ley 1333 y RASIM.",
       imagen:
         "https://res.cloudinary.com/dnbklbswg/image/upload/v1761090251/Captura_de_pantalla_2025-10-21_194348_udykwa.png",
     },
     {
       titulo: "PLANTA PROCESADORA DE LÁCTEOS IVIRGARZAMA",
       descripcion:
-        "En la estación Acacias se generan altos volúmenes de lodos aceitosos con importantes concentraciones de crudo cuyo costo de transporte es elevado.",
+        "PTAR de 240 m³/día para procesadora de lácteos en Ivirgarzama, Cochabamba. Integra cárcamo de ecualizado, regulación de pH, separación por DAF, sistema de aireación con difusores y rueda STAM para tratamiento biológico por lodos extendidos, cumpliendo normativa ambiental vigente.",
       imagen:
         "https://res.cloudinary.com/dnbklbswg/image/upload/v1761090289/Captura_de_pantalla_2025-10-21_194440_liltxd.png",
     },
     {
       titulo: "PLANTA PROCESADORA DE LÁCTEOS SAN ANDRÉS",
       descripcion:
-        "La reducción del uso de fuentes de agua en la industria mejora la sostenibilidad y genera un reto tecnológico importante para nosotros.",
+        "PTAR de 120 m³/día para procesadora de lácteos en San Andrés, Trinidad. Sistema con regulación de pH, planta DAF para separación de grasas y sólidos, deshidratación de lodos y 2 reactores UASB de flujo ascendente para tratamiento secundario y degradación de materia orgánica.",
       imagen:
         "https://res.cloudinary.com/dnbklbswg/image/upload/v1761090310/Captura_de_pantalla_2025-10-21_194501_easbgu.png",
     },
+    // {
+    //   titulo: "PLANTA  1",
+    //   descripcion:
+    //     "",
+    //   imagen:
+    //     "https://res.cloudinary.com/dnbklbswg/image/upload/v1768512602/Captura_de_pantalla_2026-01-15_172901_zi7ozc.png",
+    // },
+    // {
+    //   titulo: "PLANTA  2",
+    //   descripcion:
+    //     "",
+    //   imagen:
+    //     "https://res.cloudinary.com/dnbklbswg/image/upload/v1768512605/Captura_de_pantalla_2026-01-15_172945_jmozbq.png",
+    // },
+    // {
+    //   titulo: "PLANTA  3",
+    //   descripcion:
+    //     "",
+    //   imagen:
+    //     "https://res.cloudinary.com/dnbklbswg/image/upload/v1768512603/Captura_de_pantalla_2026-01-15_172929_gb2fjp.png",
+    // },
   ];
 
   return (

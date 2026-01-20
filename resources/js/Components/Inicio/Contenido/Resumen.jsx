@@ -14,16 +14,16 @@ export default function Resumen() {
             </h2>
             <p className="text-base md:text-lg leading-relaxed text-justify">
               <strong className="font-semibold text-blue-600 hover:text-blue-400 transition-colors duration-500">
-                AquaHealth
-              </strong> es una empresa boliviana especializada en la gestión 
-              y tratamiento integral del agua, conformada por un equipo profesional altamente 
-              capacitado, con la tecnología y el equipamiento necesarios para ofrecer servicios 
-              eficientes, sostenibles y de calidad a los sectores público y privado.
+                AquaHealth Bolivia
+              </strong>  es una empresa nacional especializada en la gestión y tratamiento integral   
+               del agua, conformada por un equipo profesional altamente capacitado, con la 
+               tecnología y el equipamiento necesarios para ofrecer servicios eficientes, 
+               sostenibles y de calidad a los sectores público y privado.
             </p>
             <p className="text-base font-bold md:text-lg leading-relaxed text-justify mt-4">
-              Fundada en 2020, la empresa ha desarrollado cinco líneas de negocio que le permiten 
-              ejecutar proyectos de impacto nacional, consolidándose como un referente en soluciones 
-              ambientales y de ingeniería del agua en todo el país.
+              Fundada en 2004, la empresa ha desarrollado cinco líneas de negocio
+               que le permiten ejecutar proyectos de impacto nacional, consolidándose
+                como un referente en soluciones ambientales y de ingeniería del agua en todo el país.
             </p>
           </div>
 

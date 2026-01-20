@@ -31,7 +31,7 @@ export default function ContactoContent() {
     },
     {
       ciudad: "Cochamba",
-      direccion: "SUPERMALL, Av. Calle Blanco Galindo (Piso 1 No34)",
+      direccion: "Av.Blanco Galindo Km1, SUPERMALL piso 1 OF.43",
       telefono: "+591 77427374",
       icon: "🏛️"
     }
