@@ -14,25 +14,29 @@ export default function ContactoContent() {
     {
       ciudad: "La Paz",
       direccion: "Av. Francisco Bedrega N° 675",
-      telefono: null,
+      zona: "(Sopocachi)",
+      telefono: "(+591)77427374",
       icon: "🏢"
     },
     {
       ciudad: "Santa Cruz",
       direccion: "c/ Diamante N° 64 Urb. Ucebol",
-      telefono: "(+591 - 4) 4334062",
+      zona: "(6° Anillo)",
+      telefono: "(+591) 79375858",
       icon: "🏪"
     },
     {
       ciudad: "Quillacollo",
       direccion: "c/ Tres Chorros y Suarez Miranda",
+      zona: "(Villa Moderna)",
       telefono: "(+591) 68830208",
       icon: "🏬"
     },
     {
-      ciudad: "Cochamba",
-      direccion: "Av.Blanco Galindo Km1, SUPERMALL piso 1 OF.43",
-      telefono: "+591 77427374",
+      ciudad: "Cochabamba",
+      direccion: null,
+      zona: "Av. Blanco Galindo Km 1, SUPERMALL Piso 1 Of. 43",
+      telefono: "(+591 - 4) 4334062",
       icon: "🏛️"
     }
   ];
@@ -44,22 +48,42 @@ export default function ContactoContent() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-   
-    console.log('Formulario enviado:', formData);
+
+    try {
+      const response = await fetch('/contacto', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        alert(data.message); // mensaje de éxito
+        setFormData({ nombre: '', email: '', telefono: '', empresa: '', mensaje: '' });
+      } else {
+        alert("Error al enviar el formulario.");
+      }
+    } catch (error) {
+      console.error("Error enviando formulario:", error);
+      alert("Ocurrió un error.");
+    }
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-gray-50">
-      
-  
+
+
       <div className="relative bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent_50%)]"></div>
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(255,255,255,0.1),transparent_50%)]"></div>
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
@@ -72,10 +96,10 @@ export default function ContactoContent() {
         </div>
       </div>
 
-  
+
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-16">
-        
-       
+
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100 group">
             <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -126,7 +150,7 @@ export default function ContactoContent() {
           </div>
         </div>
 
-       
+
         <div className="mb-16">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -139,7 +163,7 @@ export default function ContactoContent() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {ubicaciones.map((ubicacion, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-blue-500 group hover:border-blue-600"
                 style={{ animationDelay: `${index * 100}ms` }}
@@ -158,18 +182,19 @@ export default function ContactoContent() {
                     </h3>
                     <p className="text-gray-700 mb-3 leading-relaxed">
                       {ubicacion.direccion}
+                      {ubicacion.zona && (
+                        <span className="text-blue-500 ml-3 text-lg">{ubicacion.zona}</span>
+                      )}
                     </p>
-                    {ubicacion.telefono && (
-                      <a 
-                        href={`tel:${ubicacion.telefono.replace(/\s/g, '')}`}
-                        className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold transition-colors duration-300"
-                      >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
-                        {ubicacion.telefono}
-                      </a>
-                    )}
+                    <a
+                      href={`tel:${ubicacion.telefono.replace(/\s/g, '')}`}
+                      className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold transition-colors duration-300"
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                      {ubicacion.telefono}
+                    </a>
                   </div>
                 </div>
               </div>
@@ -177,11 +202,11 @@ export default function ContactoContent() {
           </div>
         </div>
 
-   
+
         <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2">
-            
-        
+
+
             <div className="p-8 md:p-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 Envíanos un Mensaje
@@ -284,7 +309,7 @@ export default function ContactoContent() {
               </form>
             </div>
 
-       
+
             <div className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 p-8 md:p-12 text-white relative overflow-hidden">
               <div className="absolute inset-0 opacity-10">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(255,255,255,0.1),transparent_50%)]"></div>
@@ -295,7 +320,7 @@ export default function ContactoContent() {
                 <h3 className="text-2xl font-bold mb-6">
                   ¿Por qué elegirnos?
                 </h3>
-                
+
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-blue-500/30 rounded-xl flex items-center justify-center flex-shrink-0">

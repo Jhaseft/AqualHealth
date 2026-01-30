@@ -4,6 +4,7 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\ContactoController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -47,6 +48,10 @@ Route::get('/productos-quimicos', function () {
 Route::get('/capacidad-&-entretenimiento', function () {
     return Inertia::render('CapacitacionEntrenamiento', []);
 });
+
+
+//ruta para mandar email desde contacto
+Route::post('/contacto', [ContactoController::class, 'enviar']);
 
 //incluir las rutas de quienes somos
 require __DIR__ . '/whoWeAreRoute.php';

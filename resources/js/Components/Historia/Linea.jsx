@@ -47,7 +47,7 @@ export default function Linea() {
 
   return (
     <div className="w-full flex flex-col items-center px-4 md:px-10 py-10">
-      {/* Línea de tiempo */}
+   
       <div className="relative flex items-center justify-center mb-10 w-full max-w-4xl">
         <button
           onClick={handlePrev}
@@ -89,7 +89,7 @@ export default function Linea() {
         </button>
       </div>
 
-      {/* Contenido principal */}
+
       <motion.div
         key={data[activeIndex].year}
         initial={{ opacity: 0, y: 30 }}
@@ -112,7 +112,7 @@ export default function Linea() {
           </p>
         </div>
 
-        {/* Indicadores inferiores */}
+
         <div className="flex justify-center gap-2 mt-6">
           {data.map((_, index) => (
             <div
