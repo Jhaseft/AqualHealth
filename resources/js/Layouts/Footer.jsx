@@ -148,6 +148,18 @@ const lineasNegocio = [
               <span className="font-medium">www.aquahealth.com.bo</span>
             </a>
 
+            <a
+              href="https://tienda.aquabolivia.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-blue-300 hover:text-blue-200 transition-colors duration-300 group"
+            >
+              <svg className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+              </svg>
+              <span className="font-medium">tienda.aquabolivia.com</span>
+            </a>
+
             <div className="flex items-center gap-6">
               <a
                 href="mailto:info@aquahealth.com.bo"

@@ -67,7 +67,8 @@ export default function Welcome() {
       <Header />
       
       <CarruselFotos images={demoImages} />
-      <Resumen/>
+
+<Resumen/>
       <Operaciones/>
       <CasosDeExito/>  
       <CarruselFotos2 images={demoImages2} />
